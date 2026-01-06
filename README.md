@@ -146,8 +146,13 @@ docker run -d --name graylog \
   -e GRAYLOG_ELASTICSEARCH_HOSTS="http://192.168.100.x:9200,http://192.168.100.x:9200,http://192.168.100.x:9200" \
   graylog/graylog:6.1
 ```
+- `GRAYLOG_PASSWORD_SECRET` → Kullanıcı şifrelerini ve session verilerini güvenli şekilde hash’lemek için kullanılan gizli anahtar.
+- `GRAYLOG_ROOT_PASSWORD_SHA2` → Graylog `admin` kullanıcısının SHA-256 ile hash’lenmiş parolası.
+- `GRAYLOG_HTTP_BIND_ADDRESS` → Graylog Web UI’nin dinlediği adres ve port.
+- `GRAYLOG_MONGODB_URI` → Graylog yapılandırma ve metadata bilgilerinin tutulduğu MongoDB replica set bağlantısı.
+- `GRAYLOG_ELASTICSEARCH_HOSTS` → Log verilerinin indekslendiği OpenSearch node’larının adresleri (Graylog tarafında eski isimlendirme korunmaktadır).
 
-- Graylog ayarlamaları ve gönderim testi:
+### - Graylog ayarlamaları ve gönderim testi:
 Graylog’un düzgün bir şekilde çalışabilmesi için input konfigürasyonu yapılması gerekir.
 
 UI → System → Inputs
@@ -157,7 +162,7 @@ UI → System → Inputs
 - Title: gelf-udp
 - Start
 
-Test log gönderimi:
+### Test log gönderimi:
 ```bash
 echo -n '{"version":"1.1","host":"graylog","short_message":"pipeline test","level":3}' \
   | nc -u -w1 127.0.0.1 12201

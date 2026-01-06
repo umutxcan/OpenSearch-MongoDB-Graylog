@@ -87,6 +87,7 @@ curl "http://localhost:9200/_cat/nodes?v"
 ```
 
 - Disk watermark ayarları (OpenSearch için):
+#### Disk doluluğu nedeniyle index/shard yazımı veya allocation işlemlerinin durmaması için eşikler ayarlanmıştır. Zorunlu olmamakla birlikte tuning açısından büyük önem taşır.
 ```bash
 curl -X PUT "http://localhost:9200/_cluster/settings" \
   -H 'Content-Type: application/json' \
@@ -169,7 +170,7 @@ echo -n '{"version":"1.1","host":"graylog","short_message":"ilk log geldi","leve
 UI → Search  
 Gönderilen mesaj metni aratılır. Mesaj görünüyorsa log ingestion başarılıdır.
 
-- Opsiyonel pipeline ve stream ayarları:
+### - Opsiyonel pipeline ve stream ayarları:
 Amaç: Graylog’un merkezi işleme (processing) yeteneklerini göstermek.
 
 Akış: Pipeline → Stream → Index
@@ -181,7 +182,7 @@ UI → Streams → Create stream
 - Name: API-Errors
 - Rule: level >= 3 veya message contains "ERROR"
 
-PART B — Pipeline Rule oluşturma  
+ PART B — Pipeline Rule oluşturma  
 UI → System → Pipelines → Create Rule
 
 Kural örneği:

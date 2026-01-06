@@ -1,13 +1,13 @@
 # Graylog, MongoDB & OpenSearch Centralized Logging Sistemi
 
-## 📘 Overview
+## 📘 Genel Bakış
 Bu proje; sistemlerden gelen ham ve dağınık logları merkezi, düzenli ve anlamlı hale getirmek amacıyla kurulmuştur. Graylog ve OpenSearch kullanarak loglar tek bir yerde toplanmış; pipeline ve stream'ler ile işlenip görselleştirilebilir hale getirilir.
 
 Bu altyapı sayesinde loglar sadece okunur metinler olmaktan çıkıp filtrelenebilir, analiz edilebilir ve izlenebilir hale gelerek sağlam bir **Observability (Gözlemlenebilirlik)** temeli oluşturur.
 
 ---
 
-## ⚙️ Architecture & Workflow
+## ⚙️ Mimari & İş Akışı
 Sistem, yüksek erişilebilirlik ve performans için şu işleyiş sırasına göre çalışmaktadır:
 
 1. **Ingestion:** Client/Server/Agent log gönderir → Graylog Input.  
@@ -18,8 +18,8 @@ Sistem, yüksek erişilebilirlik ve performans için şu işleyiş sırasına g�
 
 ---
 
-## 🧩 Components
-| Component | Purpose |
+## 🧩 Bileşenler
+| Bileşenler | Amaçları |
 | :--- | :--- |
 | **OpenSearch** | Logları kalıcı saklayan, indeksleyen ve hızlı arama sağlayan motor. |
 | **Graylog** | Log toplama, işleme, zenginleştirme ve görselleştirme arayüzü. |
@@ -28,7 +28,7 @@ Sistem, yüksek erişilebilirlik ve performans için şu işleyiş sırasına g�
 
 ---
 
-## 🚀 Deployment Guide
+## 🚀 Deployment Rehberi
 
 ### 1. Pre-requisites (Tüm Node'lar)
 Kuruluma başlamadan önce tüm sunucularda aşağıdaki hazırlıkları tamamlayın.
@@ -194,4 +194,4 @@ Edit connections bölümünden oluşturulan stream ile pipeline arasındaki bağ
 
 ## 🧑‍💻 Author
 Created by **Umut Can** — DevOps Automation & Cloud Infrastructure Project  
-© 2025 — All rights reserved.
+© 2026 — All rights reserved.

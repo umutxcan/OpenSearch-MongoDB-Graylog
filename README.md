@@ -1,6 +1,5 @@
-# OpenSearch-MongoDB-Graylog
 
-# 📊 Graylog, MongoDB & OpenSearch Centralized Logging System
+# Graylog, MongoDB & OpenSearch Centralized Logging Sistemi
 
 ## 📘 Overview
 Bu proje; sistemlerden gelen ham ve dağınık logları merkezi, düzenli ve anlamlı hale getirmek amacıyla kurulmuştur. Graylog ve OpenSearch kullanarak loglar tek bir yerde toplanmış; pipeline ve stream yapılarıyla işlenerek zenginleştirilmiştir. 
@@ -132,7 +131,7 @@ MongoDB, Graylog’un kullanıcılar, stream’ler, pipeline kuralları ve dashb
     docker exec -it mongo mongosh --eval \
     "rs.status().members.map(m=>({name:m.name,state:m.stateStr}))"
 
-    ```
+```
 
 ### 4.Graylog Kurulumu
 Her sunucuda `node.name` ve IP adreslerini kendi yapınıza göre güncelleyerek çalıştırın.
@@ -149,7 +148,7 @@ MongoDB URI → Graylog ayarlarını tutacağı DB
 Elasticsearch hosts → burada aslında OpenSearch endpoint’lerin var (Graylog eski isimlendirmeyi kullanıyor)
 
     ```bash
-    docker run -d --name graylog \
+docker run -d --name graylog \
   --restart unless-stopped \
   -p 9000:9000 \
   -p 12201:12201/udp \

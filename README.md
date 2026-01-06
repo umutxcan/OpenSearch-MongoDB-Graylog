@@ -61,7 +61,7 @@ echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
 ```
 
 ### 2. OpenSearch Cluster Kurulumu (3 Node)
-Her sunucuda `node.name` ve IP adreslerini kendi yapınıza göre güncelleyerek çalıştırın.
+OpenSearch, Graylog’un topladığı logları kalıcı olarak saklayan, indeksleyen ve çok hızlı şekilde aranabilir hale getiren arka uç veritabanı olarak kullanıldı.Her sunucuda `node.name` ve IP adreslerini kendi yapınıza göre güncelleyerek çalıştırın.
 
 ```bash
 docker volume create osdata
@@ -124,7 +124,7 @@ docker exec -it mongo mongosh --eval \
 ```
 
 ### 4. Graylog Kurulumu
-Her sunucuda `node.name` ve IP adreslerini kendi yapınıza göre güncelleyerek çalıştırın.
+Graylog, sistemlerden gelen logları merkezi olarak toplamak, işlemek ve anlamlı alanlara ayırmak için kullanıldı. Her sunucuda `node.name` ve IP adreslerini kendi yapınıza göre güncelleyerek çalıştırın.
 
 Kısaca hizmet portları ve kullanım:
 - 9000 → Graylog Web UI

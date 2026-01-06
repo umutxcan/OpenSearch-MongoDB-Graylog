@@ -1,4 +1,4 @@
-# Graylog, MongoDB & OpenSearch Centralized Logging Sistemi
+# Graylog, MongoDB & OpenSearch Merkezi Logging Sistemi
 
 ## 📘 Genel Bakış
 Bu proje; sistemlerden gelen ham ve dağınık logları merkezi, düzenli ve anlamlı hale getirmek amacıyla kurulmuştur. Graylog ve OpenSearch kullanarak loglar tek bir yerde toplanmış; pipeline ve stream'ler ile işlenip görselleştirilebilir hale getirilir.

@@ -13,7 +13,7 @@ Sistem, yüksek erişilebilirlik ve performans için şu işleyiş sırasına g�
 1. **Ingestion:** Client/Server/Agent log gönderir → Graylog Input.  
 2. **Processing:** Graylog logu alır → Journal'a (buffer) yazar → Pipeline/Stream ile işler.  
 3. **Storage:** İşlenen log verisi → OpenSearch'e indexlenir.  
-4. **Visualization:** Kullanıcı UI'dan arama yapar → Graylog, OpenSearch'e sorgu atar ��� Sonuçlar gösterilir.  
+4. **Visualization:** Kullanıcı UI'dan arama yapar → Graylog, OpenSearch'e sorgu atar ve sonuçlar gösterilir.  
 5. **Metadata:** Kullanıcı, stream, pipeline ve alert ayarları → MongoDB'de saklanır.
 
 ---

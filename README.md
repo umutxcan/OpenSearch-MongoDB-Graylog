@@ -30,7 +30,7 @@ Sistem, yüksek erişilebilirlik ve performans için şu işleyiş sırasına g�
 
 ## 🚀 Deployment Rehberi
 
-### 1. Pre-requisites (Tüm Node'lar)
+### 1. Pre-requisites 
 Kuruluma başlamadan önce tüm sunucularda aşağıdaki hazırlıkları tamamlayın.
 
 - OpenSearch sunucularında /etc/hosts ayarı:

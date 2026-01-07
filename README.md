@@ -31,7 +31,7 @@ Sistem, yüksek erişilebilirlik ve performans için şu işleyiş sırasına g�
 ## 🚀 Deployment Rehberi
 
 ### 1. Ön Gereksinimler
-Kuruluma başlamadan önce tüm sunucularda aşağıdaki hazırlıkları tamamlayın.
+Kuruluma başlamadan önce sunucularda aşağıdaki hazırlıkları tamamlayın.
 
 - OpenSearch sunucularında /etc/hosts ayarı:
 ```text
